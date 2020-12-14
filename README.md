@@ -61,7 +61,7 @@ vh | Relativo a la altura del dispositivo.
  Todos las fuentes tienen caracteristicas importantes que deberiamos tener en cuenta, o por lo menos conoce:
 
  Atributo|valor
- -   |-
+  -|-
  font-size   |Define el tamaño de la fuente 
 font-family   | Define el tipo de fuente (Calibri, arial, etc).
 line-height   | Especifica la altura de una linea, o la altura que ocupa. El valor por defecto es 1.
