@@ -1,0 +1,11 @@
+.login-form__input {
+    color: red;
+}
+
+.login-form__input--primero {
+    color: blue;
+    font-family: "Mystery Quest", cursive;
+}
+.login-form__input--segundo {
+    font: oblique bold 120% cursive;
+}

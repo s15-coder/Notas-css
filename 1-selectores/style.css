@@ -1,0 +1,21 @@
+h1 {
+    color: #f00;
+}
+
+.byClass {
+    color: #f525;
+}
+
+#byId {
+    color: rgb(45, 12, 255);
+}
+
+[porAtributo="atributo"] {
+    color: aqua;
+}
+h5 a{
+    color: chartreuse;
+}
+h6:hover{
+    background-color: green;
+}

@@ -1,0 +1,16 @@
+.login-form{
+
+}
+.login-form__input--primero{
+    font-size: 20px;
+
+}
+.login-form__input--segundo{
+    font-size: 20cm;
+}
+.login-form__input--tercero{
+    font-size: 20mm;
+}
+.login-form__input--cuarto{
+    font-size: 20pt;
+}
