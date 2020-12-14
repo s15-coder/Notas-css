@@ -6,11 +6,15 @@ font-size: 30px;
     font-size: 5em;
 }
 .login-form__input--segundo{
+font-size: 2vw;
     
 }
 .login-form__input--tercero{
-    
+    font-size: 2vh;
 }
 .login-form__input--cuarto{
-    
+    /*15 pixeles*/
+    font-family: 'Langar', cursive;
+
+    font-size: 50%;
 }

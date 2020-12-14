@@ -51,7 +51,20 @@ Centimetros| cm
 
 Medida|Valor
 -|-
-Em | Se refiere al tamaño actual o longitud del elemento, 2em significa(2  veces el tamaño del elemento)
-Rem  | Hace referencia al tamaño o longitud del elemento raiz o elemento padre.
-Vw | Hace referencia al ancho total del dispositivo.
-Vh | Relativo a la altura del dispositivo.
+em | Se refiere al tamaño actual o longitud del elemento, 2em significa(2  veces el tamaño del elemento). Inicialmente el navegador asigna un valor de 16px a 1em.
+rem  | Hace referencia al tamaño o longitud del elemento raiz o elemento padre.
+vw | Hace referencia al ancho total del dispositivo.
+vh | Relativo a la altura del dispositivo.
+% | Hace enfasis en el valor que tiene o medida que tiene su padre. De tal manera, que 50% es la mitad del valor de su padre.
+
+### Propiedades de Texto
+ Todos las fuentes tienen caracteristicas importantes que deberiamos tener en cuenta, o por lo menos conoce:
+
+ Atributo|valor
+ -   |-
+ font-size   |Define el tamaño de la fuente 
+font-family   | Define el tipo de fuente (Calibri, arial, etc).
+line-height   | Especifica la altura de una linea, o la altura que ocupa. El valor por defecto es 1.
+font-weight| Sirve para aplicar negrilla en determinadas proporciones a una fuente.
+
+Se pueden agregar fuentes de internet, puede buscar en [Google fonts](https://fonts.google.com/) para ver varias opciones gratuitas.
