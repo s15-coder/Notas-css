@@ -1,0 +1,24 @@
+.contenedor{
+    height: 500px;
+    width: 500px;
+background-color: blue;
+    position: relative;
+    margin: auto;
+    margin-top: 150px;
+}
+div div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+.caja1{
+    bottom: 0;
+    right: 0;
+}
+.caja2{
+    right: 0;
+}
+.caja3{
+    bottom: 0;
+}

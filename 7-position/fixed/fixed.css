@@ -1,0 +1,9 @@
+.header{
+    background-color: red;
+    font-size: 4vh;
+    width: 100vw;
+    position: fixed;
+}
+p{
+    font-size: 10vh;
+}

@@ -1,0 +1,9 @@
+.h1c,
+.pc {
+    display: inline;
+}
+
+.bc,
+.ac {
+    display: block;
+}
