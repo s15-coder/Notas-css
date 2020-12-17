@@ -121,4 +121,26 @@ Hay 5 diferentes tipos de valores que puede tomar la propiedad _position_:
 * _absolute_
 * _fixed_
 * _sticky_
- * _static_
+* _static_
+  
+### Overflow
+
+La propiedad overflow hacer referencia al contenido que sobre o no se ajusta correcta a nuestra caja, con overflow podemos decidir que pasa con este contenido y como manejarlo. La propiedad _overflow_ es un shorthand de _overflow-x_ y _overflow-y_.
+
+Posible valores:
+* _Visible_:  Es el valor por defecto que tiene la caja.
+* _Auto_: Si mi texto o contenido se desborda, automaticamente me cree una barra deslizable.
+*  _Scroll_: Genera una barra deslizable independientemente de que sea necesario o no.
+*  _Hidden_: Oculta la barra deslizable y tambien su contenido.
+
+### Float
+
+Esta propiedad actualmente es usada para envolver imagenes o elementos en texto, esto le da un efecto muy bueno y formateado a la estructura del texto y el desarrollo.
+
+Puede adquirir 3 propiedades:
+* _Left_: La imagen o el elemento pasa a estar en el lado izquierdo del texto.
+* _Right_: La imagen o el elemento pasa a estar en el lado derecho del texto.
+* _None_: Es como si la propiedad _float_ no se aplicara (default).
+
+ ### Pseudelemento
+Aunque suene ironico no representa ningún elemento dentro del DOM, sin embargo, responde a acciones o eventos que se van desarrollando.
