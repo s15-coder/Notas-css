@@ -1,0 +1,25 @@
+.parrafo::first-line {
+    font-size: 20px;
+    color: red;
+}
+
+.parrafo2::first-letter {
+    font-size: 2em;
+    background-color: yellow;
+}
+
+
+
+input {
+    width: 50%;
+    padding: 30px;
+    text-align: center;
+}
+input::placeholder{
+    font-size: 40px;
+    color: red;
+}
+input::selection{
+    background-color: red;
+    color: yellow;
+}

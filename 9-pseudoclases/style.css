@@ -1,0 +1,43 @@
+.caja {
+    color: black;
+    width: 10vw;
+    height: 10vw;
+    background-color: red;
+    transition: all 5s, background-color 1s;
+}
+
+.caja:hover {
+    width: 20vw;
+    height: 20vw;
+    background-color: rgb(190, 63, 63);
+}
+
+a:link {
+    color: red;
+}
+
+a:visited {
+    color: grey;
+}
+
+input {
+    display: block;
+    width: 20vw;
+    border: 10px solid red;
+}
+
+input:focus{
+    border-color: blue;
+}
+.caja2{
+    margin-top: 2vw;
+    background-color:yellow;
+    width: 20vw;
+    height: 20vw;
+    transition:  all  1s ,background-color 2s;
+}
+.caja2:active{
+    background-color:red;
+    width: 50vw;
+    height: 50vw;
+}

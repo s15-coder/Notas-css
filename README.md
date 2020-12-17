@@ -16,7 +16,7 @@
   * Estilos en linea: Aquellos usados en el HTML.
   * Identificadores
   *
-    * Clases
+    * Atributos
     * Pseudoclase
     * clases  
   *
@@ -142,5 +142,30 @@ Puede adquirir 3 propiedades:
 * _Right_: La imagen o el elemento pasa a estar en el lado derecho del texto.
 * _None_: Es como si la propiedad _float_ no se aplicara (default).
 
- ### Pseudelemento
-Aunque suene ironico no representa ningún elemento dentro del DOM, sin embargo, responde a acciones o eventos que se van desarrollando.
+ ### Pseudelementos
+Un pseudoelemento no hace referencia a un elemento HTML del todo, hace referencia a una parte del elemento que puede variar dinamicamente, ejemplo: la primera linea de un texto. Es importante que la existencia de un pseudelemento depende de un elemento de HTML.
+
+A continuación, mostraremos los diferentes pseudelemento que hay:
+
+Pseudelemento|Referencia
+-|-
+_first-line_| Hace referencia a la primer linea de un texto. No función con elementos _inline_.
+_first-letter_| Hace referencia a la primer letra de un texto. No función con elementos _inline_.
+_placeholder_| Texto que se encuentra incialmente en un campo de texto y desaparece al empezar a escribir.
+_selection_ | Cuando seleccionamos texto con el cursor normalmente obtenemos un fondo azul, bueno, con el pseudelemento _selection_ podremos manejar este fondo a nuestro antojo. Tiene sus propiedades un poco limitadas ya que tiene caracteristicas de un elemento en linea ( _inline_).
+_before_ | Crea contenido "antes" del contenido, sin embargo, no genera contenido real en el DOM, es visible, sin embargo no se puede seleccionar. Requiere propiedad _content_ para su funcionamiento.
+_after_ |Crea contenido "despúes" del contenido, sin embargo, no genera contenido real en el DOM, es visible, sin embargo no se puede seleccionar. Requiere propiedad _content_ para su funcionamiento.
+
+### Pseudoclases
+
+Las pseudoclases son listeners, reaccionan a determinados eventos e interacciones que el usuario va desarrollando a lo largo del desarrollo de la aplicación, volviendo el programa y su diseño mas dinamicos.
+
+Algunas pseudoclases que podremos ver son las siguientes:
+Pseudoclase|Evento
+-|-
+_hover_| Esta pseudoclase tiene su momento cuando ponemos el mouse encima o sobre el elemento, permitiendonos brindarle propiedades. Se recomiendo usar la pseudoclase _hover_ en conjunto con la propiedad _transition_, ya que ayuda a realizar cambios graduales y no tan bruscos.
+_link_| Hace referencia a todos los enlaces o link de la pagina que __NO__ han sido visitados.
+_visited_| Hace referencia a todos los enlaces o link de la pagina que __SI__ han sido visitados.
+_focus_| Se usa comunmente para los input. Cuando seleccionamos el input para empezar a escribir es cuando pasa de estado desenfocado a enfocado, es entonces cuando tomar lugar la pseudoclase _focus_.
+_active_| Eesponde al __click__, es decir, cuando clickeamos o seleccionamos un elemento esta pseudoclase actua, permitiendonos modifical el elemento mientras este siendo presionado. Tambien se recomienda el uso de la propiedad _transition_.
+_lang_| Recibe un argumento, el cual es el tipo de lenguaje. Para que esto funcione debemos definir en HTML el atributo _lang_ con su respectivo lenguaje. Funciona similar a la selección por atributo.
