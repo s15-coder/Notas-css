@@ -13,9 +13,11 @@
    10. [Float](#float)
    11. [Pseudoelementos](#pseudoelementos)
    12. [Pseudoclases](#pseudoclases)
+   13. [Objet Fit](#objet-fit)
   
 
 ### <a name="selectores">Tipos de selectores </a>
+Los selectores (como su nombre lo dice), nos ayudan a identificar y seleccionar los elementos dentro del DOM, una vez seleccionado e identificado el elemento que deseamos procedemos a darle estilo aplicando diversas propiedas.
   * Universal
   * Tipo o etiqueta
   * Clase
@@ -74,12 +76,12 @@ En CSS podemos encontrar 2 tipos de medida **relativas y fijas**, las cuales se 
 ### <a name="textProperty"> Propiedades de Texto</a>
  Todos las fuentes tienen caracteristicas importantes que deberiamos tener en cuenta, o por lo menos conoce:
 
-  Propiedad|valor   
-  -|-                   
- | font-size   | Define el tamaño de la fuente                                                        |
- | font-family | Define el tipo de fuente (Calibri, arial, etc).                                      |
- | line-height | Especifica la altura de una linea, o la altura que ocupa. El valor por defecto es 1. |
- | font-weight | Sirve para aplicar negrilla en determinadas proporciones a una fuente.               |
+  | Propiedad   | valor                                                                                |
+  | ----------- | ------------------------------------------------------------------------------------ |
+  | font-size   | Define el tamaño de la fuente                                                        |
+  | font-family | Define el tipo de fuente (Calibri, arial, etc).                                      |
+  | line-height | Especifica la altura de una linea, o la altura que ocupa. El valor por defecto es 1. |
+  | font-weight | Sirve para aplicar negrilla en determinadas proporciones a una fuente.               |
 
 Se pueden agregar fuentes de internet, puede buscar en [Google fonts](https://fonts.google.com/) para ver varias opciones gratuitas.
 
@@ -112,19 +114,19 @@ Para cambiar el comportamiento de nuestras cajas podemos usar la propiedad *disp
 ### Propiedades de las Cajas
 
 En HTML todas las etiquetas son cajas o estan envuelta en una por lo tanto, todas las siguiente propiedades aplican para todas las etiquetas:
-Atributo|Función
--|-
-_padding_ | Es la distancia que hay entre la caja y su contenido (shorthand property).
-_margin_ | Es la distancia entre diferentes cajas, tambien se entiende como la distancia que una caja tiene hacia afuera (shothand property).
-_border_| Define las caracteristicas que tiene el borde(shorthand property).
-_content_| Se refiere al contenido mismo de la caja(line-height).
+| Atributo  | Función                                                                                                                            |
+| --------- | ---------------------------------------------------------------------------------------------------------------------------------- |
+| _padding_ | Es la distancia que hay entre la caja y su contenido (shorthand property).                                                         |
+| _margin_  | Es la distancia entre diferentes cajas, tambien se entiende como la distancia que una caja tiene hacia afuera (shothand property). |
+| _border_  | Define las caracteristicas que tiene el borde(shorthand property).                                                                 |
+| _content_ | Se refiere al contenido mismo de la caja(line-height).                                                                             |
 
 ### Propiedades Intersantes
 
-Propiedad | Uso
--|-
-_border-radius_| Le da bordes redondeados a una caja.
-_box-shadow_| Se usa para darle el efecto de sombreado a una caja (material design).
+| Propiedad       | Uso                                                                    |
+| --------------- | ---------------------------------------------------------------------- |
+| _border-radius_ | Le da bordes redondeados a una caja.                                   |
+| _box-shadow_    | Se usa para darle el efecto de sombreado a una caja (material design). |
 
 ### <a name="position">Position</a>
 
@@ -161,25 +163,36 @@ Un pseudoelemento no hace referencia a un elemento HTML del todo, hace referenci
 
 A continuación, mostraremos los diferentes pseudelemento que hay:
 
-Pseudelemento|Referencia
--|-
-_first-line_| Hace referencia a la primer linea de un texto. No función con elementos _inline_.
-_first-letter_| Hace referencia a la primer letra de un texto. No función con elementos _inline_.
-_placeholder_| Texto que se encuentra incialmente en un campo de texto y desaparece al empezar a escribir.
-_selection_ | Cuando seleccionamos texto con el cursor normalmente obtenemos un fondo azul, bueno, con el pseudelemento _selection_ podremos manejar este fondo a nuestro antojo. Tiene sus propiedades un poco limitadas ya que tiene caracteristicas de un elemento en linea ( _inline_).
-_before_ | Crea contenido "antes" del contenido, sin embargo, no genera contenido real en el DOM, es visible, sin embargo no se puede seleccionar. Requiere propiedad _content_ para su funcionamiento.
-_after_ |Crea contenido "despúes" del contenido, sin embargo, no genera contenido real en el DOM, es visible, sin embargo no se puede seleccionar. Requiere propiedad _content_ para su funcionamiento.
+| Pseudelemento  | Referencia                                                                                                                                                                                                                                                                    |
+| -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _first-line_   | Hace referencia a la primer linea de un texto. No función con elementos _inline_.                                                                                                                                                                                             |
+| _first-letter_ | Hace referencia a la primer letra de un texto. No función con elementos _inline_.                                                                                                                                                                                             |
+| _placeholder_  | Texto que se encuentra incialmente en un campo de texto y desaparece al empezar a escribir.                                                                                                                                                                                   |
+| _selection_    | Cuando seleccionamos texto con el cursor normalmente obtenemos un fondo azul, bueno, con el pseudelemento _selection_ podremos manejar este fondo a nuestro antojo. Tiene sus propiedades un poco limitadas ya que tiene caracteristicas de un elemento en linea ( _inline_). |
+| _before_       | Crea contenido "antes" del contenido, sin embargo, no genera contenido real en el DOM, es visible, sin embargo no se puede seleccionar. Requiere propiedad _content_ para su funcionamiento.                                                                                  |
+| _after_        | Crea contenido "despúes" del contenido, sin embargo, no genera contenido real en el DOM, es visible, sin embargo no se puede seleccionar. Requiere propiedad _content_ para su funcionamiento.                                                                                |
 
 ### <a name="pseudoclases">Pseudoclases</a>
 
 Las pseudoclases son listeners, reaccionan a determinados eventos e interacciones que el usuario va desarrollando a lo largo del desarrollo de la aplicación, volviendo el programa y su diseño mas dinamicos.
 
 Algunas pseudoclases que podremos ver son las siguientes:
-Pseudoclase|Evento
+| Pseudoclase | Evento                                                                                                                                                                                                                                                                       |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| _hover_     | Esta pseudoclase tiene su momento cuando ponemos el mouse encima o sobre el elemento, permitiendonos brindarle propiedades. Se recomiendo usar la pseudoclase _hover_ en conjunto con la propiedad _transition_, ya que ayuda a realizar cambios graduales y no tan bruscos. |
+| _link_      | Hace referencia a todos los enlaces o link de la pagina que __NO__ han sido visitados.                                                                                                                                                                                       |
+| _visited_   | Hace referencia a todos los enlaces o link de la pagina que __SI__ han sido visitados.                                                                                                                                                                                       |
+| _focus_     | Se usa comunmente para los input. Cuando seleccionamos el input para empezar a escribir es cuando pasa de estado desenfocado a enfocado, es entonces cuando tomar lugar la pseudoclase _focus_.                                                                              |
+| _active_    | Eesponde al __click__, es decir, cuando clickeamos o seleccionamos un elemento esta pseudoclase actua, permitiendonos modifical el elemento mientras este siendo presionado. Tambien se recomienda el uso de la propiedad _transition_.                                      |
+| _lang_      | Recibe un argumento, el cual es el tipo de lenguaje. Para que esto funcione debemos definir en HTML el atributo _lang_ con su respectivo lenguaje. Funciona similar a la selección por atributo.                                                                             |
+
+### <a name="objetFit">Objet Fit</a>
+
+Esta propiedad nos indica como un imagen o video sera desplejado o ajustado en un contenerdor. Si nosotros definimos un contenedor para la imagen con propiedades que no concuerdan con las originales la imagen va a perder su proporción, es por eso que la propiedad _objet-fit_ puede usar alguna de las siguientes propiedades:
+Valor|Significado
 -|-
-_hover_| Esta pseudoclase tiene su momento cuando ponemos el mouse encima o sobre el elemento, permitiendonos brindarle propiedades. Se recomiendo usar la pseudoclase _hover_ en conjunto con la propiedad _transition_, ya que ayuda a realizar cambios graduales y no tan bruscos.
-_link_| Hace referencia a todos los enlaces o link de la pagina que __NO__ han sido visitados.
-_visited_| Hace referencia a todos los enlaces o link de la pagina que __SI__ han sido visitados.
-_focus_| Se usa comunmente para los input. Cuando seleccionamos el input para empezar a escribir es cuando pasa de estado desenfocado a enfocado, es entonces cuando tomar lugar la pseudoclase _focus_.
-_active_| Eesponde al __click__, es decir, cuando clickeamos o seleccionamos un elemento esta pseudoclase actua, permitiendonos modifical el elemento mientras este siendo presionado. Tambien se recomienda el uso de la propiedad _transition_.
-_lang_| Recibe un argumento, el cual es el tipo de lenguaje. Para que esto funcione debemos definir en HTML el atributo _lang_ con su respectivo lenguaje. Funciona similar a la selección por atributo.
+_fill_| Estira la imagen hasta lograr ocupar totalmente el elemento, comunmente hace que la imagen pierda sus proporciones logicas (_default value_).
+_cover_ | Se escala la imagen para llenar por completo el contenedor, sin embargo no pierde las proporciones logicas de la imagen, lo cual puede dar como resultado que la imagen sea cortada.
+_contain_ | Escala la imagen al maximo tamaño posible del contenedor para poder encajar sin tener que cortar la imagen.
+_none_ | Mantinene las medidas iguales de la imagen sin importarle el tamaño de su contenedor. La imagen puede llegar a ser cortada si el tamaño de su contenedor es menor al de la imagen.
+_scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como resultado que no se adapta al tamaño de su contenedor a menos que el tamaño del contenedor sea menor al
