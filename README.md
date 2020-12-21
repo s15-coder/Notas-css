@@ -137,7 +137,7 @@ Hay 5 diferentes tipos de valores que puede tomar la propiedad _position_:
 * _sticky_
 * _static_
   
-### <a =name="overflow">Overflow</a>
+### <a name="overflow">Overflow</a>
 
 La propiedad overflow hacer referencia al contenido que sobre o no se ajusta correcta a nuestra caja, con overflow podemos decidir que pasa con este contenido y como manejarlo. La propiedad _overflow_ es un shorthand de _overflow-x_ y _overflow-y_.
 
