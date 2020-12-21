@@ -1,7 +1,18 @@
 # Notas CSS
 
 ## Introducción
-### Tipos de selectores 
+   1. [Tipos de selectores](#selectores)
+   2. [Especificidad]
+   3. [Metodologia Bem] 
+   4. [Medidas]
+   5. [Normalize]
+   6. [Modelo] de Cajas
+   7. [Position]
+   8. [Pseudoelementos]
+   9. [Pseudoclases]
+   10. Float
+
+### <a name="selectores">Tipos de selectores </a>
   * Universal
   * Tipo o etiqueta
   * Clase
