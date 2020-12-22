@@ -195,4 +195,5 @@ _fill_| Estira la imagen hasta lograr ocupar totalmente el elemento, comunmente 
 _cover_ | Se escala la imagen para llenar por completo el contenedor, sin embargo no pierde las proporciones logicas de la imagen, lo cual puede dar como resultado que la imagen sea cortada.
 _contain_ | Escala la imagen al maximo tamaño posible del contenedor para poder encajar sin tener que cortar la imagen.
 _none_ | Mantinene las medidas iguales de la imagen sin importarle el tamaño de su contenedor. La imagen puede llegar a ser cortada si el tamaño de su contenedor es menor al de la imagen.
-_scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como resultado que no se adapta al tamaño de su contenedor a menos que el tamaño del contenedor sea menor al
+_scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como resultado que no se adapta al tamaño de su contenedor a menos que el tamaño del contenedor sea menor al de la misma imagen.
+  
