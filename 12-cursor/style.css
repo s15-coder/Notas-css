@@ -1,0 +1,39 @@
+.container {
+    width: 100px;
+    height: 100px;
+}
+
+#id1 {
+    background-color: red;
+    cursor: pointer;
+}
+
+#id2 {
+    background-color: rgb(25, 0, 255);
+    cursor: grab;
+}
+
+#id3 {
+    background-color: rgb(245, 230, 26);
+    cursor: progress;
+}
+
+#id4 {
+    background-color: rgb(19, 223, 206);
+    cursor: e-resize;
+}
+
+#id5 {
+    background-color: rgb(255, 2, 221);
+    cursor: no-drop;
+}
+
+#id6 {
+    background-color: rgb(133, 243, 8);
+    cursor: row-resize;
+}
+
+#id7 {
+    background-color: rgba(36, 36, 58, 0.844);
+    cursor: wait;
+}
