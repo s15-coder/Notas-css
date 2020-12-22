@@ -199,4 +199,4 @@ _scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como res
   
 ### <a name="cursor"> Cursor</a>
 
-Esta propiedad indica que forma y caracteristicas tendra nuestro puntero cuando este sobre determinado elemento, ya que existen demasiados valores se recomienda ver la siguiente pagina donde estan bien explicado: [Click Aqui para ir al enlace](https://www.w3schools.com/cssref/pr_class_cursor.asp){:target="_blank"}
+Esta propiedad indica que forma y caracteristicas tendra nuestro puntero cuando este sobre determinado elemento, ya que existen demasiados valores se recomienda ver la siguiente pagina donde estan bien explicado:<a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target ="_blank">Click Aqui para ir al enlace</a>
