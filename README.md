@@ -14,7 +14,7 @@
    11. [Pseudoelementos](#pseudoelementos)
    12. [Pseudoclases](#pseudoclases)
    13. [Objet Fit](#objet-fit)
-  
+   14. [Cursor](#cursor)
 
 ### <a name="selectores">Tipos de selectores </a>
 Los selectores (como su nombre lo dice), nos ayudan a identificar y seleccionar los elementos dentro del DOM, una vez seleccionado e identificado el elemento que deseamos procedemos a darle estilo aplicando diversas propiedas.
@@ -197,3 +197,6 @@ _contain_ | Escala la imagen al maximo tamaño posible del contenedor para poder
 _none_ | Mantinene las medidas iguales de la imagen sin importarle el tamaño de su contenedor. La imagen puede llegar a ser cortada si el tamaño de su contenedor es menor al de la imagen.
 _scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como resultado que no se adapta al tamaño de su contenedor a menos que el tamaño del contenedor sea menor al de la misma imagen.
   
+### <a name="cursor"> Cursor</a>
+
+Esta propiedad indica que forma y caracteristicas tendra nuestro puntero cuando este sobre determinado elemento, ya que existen demasiados valores se recomienda ver la siguiente pagina donde estan bien explicado: [Click Aqui para ir al enlace](https://www.w3schools.com/cssref/pr_class_cursor.asp);
