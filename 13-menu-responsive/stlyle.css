@@ -1,0 +1,91 @@
+.nav__responsive-ul {
+    display: none;
+}
+
+nav {
+    background-color: rgb(15, 116, 15);
+}
+
+.nav__responsive-li {
+    display: inline;
+}
+
+.nav__li {
+    display: inline-block;
+    padding: 1.5vw;
+}
+
+.nav__li i {
+    margin: 0 .8vw;
+    box-sizing: border-box;
+}
+
+.nav__li a,
+.nav__li i {
+    color: white;
+    text-decoration: none;
+}
+
+.nav__li:hover>a,
+.nav__li:hover>i {
+    color: rgba(214, 207, 207, 0.966);
+    cursor: pointer;
+}
+
+.nav__responsive-button-container {
+    position: absolute;
+    width: 100%;
+    background-color: rgb(15, 116, 15);
+    margin-top: -6vh;
+    z-index: 100;
+}
+
+.nav__responsive-button {
+    width: 100%;
+    padding: 2vh 8vw;
+    text-align: right;
+    color: white;
+}
+
+@media only screen and (max-width: 550px) {
+    .nav__responsive-ul {
+        width: 100%;
+        display: block;
+        position: absolute;
+        background-color: rgb(9, 252, 9);
+        padding-top: 6vh;
+        height: 2vh;
+    }
+    .nav__responsive-li {
+        display: block;
+        width: 70vw;
+        margin: 6vw 0;
+        padding: .5vh 1vw .5vh 5vw;
+    }
+    .nav__responsive-li>a,
+    .nav__responsive-li>i {
+        color: black;
+        text-decoration: none;
+    }
+    .nav__responsive-li>i {
+        margin: 0 2vw;
+    }
+    .nav__ul {
+        display: none;
+    }
+    .nav__li-container {
+        width: 70%;
+        padding-top: 5vh;
+        background-color: greenyellow;
+        position: relative;
+        margin-top: -100vh;
+        transition: all 1s;
+        height: 97.5vh;
+        z-index: 1;
+    }
+    .nav__responsive-ul:hover>.nav__li-container    {
+        margin-top: -3.5vh;
+      
+    }
+    
+}

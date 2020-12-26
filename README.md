@@ -15,6 +15,7 @@
    12. [Pseudoclases](#pseudoclases)
    13. [Objet Fit](#objet-fit)
    14. [Cursor](#cursor)
+   15. [Responsive Design](#responsive)
 
 ### <a name="selectores">Tipos de selectores </a>
 Los selectores (como su nombre lo dice), nos ayudan a identificar y seleccionar los elementos dentro del DOM, una vez seleccionado e identificado el elemento que deseamos procedemos a darle estilo aplicando diversas propiedas.
@@ -199,4 +200,9 @@ _scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como res
   
 ### <a name="cursor"> Cursor</a>
 
-Esta propiedad indica que forma y caracteristicas tendra nuestro puntero cuando este sobre determinado elemento, ya que existen demasiados valores se recomienda ver la siguiente pagina donde estan bien explicado:<a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target ="_blank">Click Aqui para ir al enlace</a>
+Esta propiedad indica que forma y caracteristicas tendra nuestro puntero cuando este sobre determinado elemento, ya que existen demasiados valores se recomienda ver la siguiente pagina donde estan bien explicado: <a href="https://www.w3schools.com/cssref/pr_class_cursor.asp" target ="_blank">Click Aqui para ir al enlace</a>
+
+### <a name="responsive">Responsive Design</a>
+
+Actualmente todas la web se trabajaba sobre computadores de escritorio, lo cual hacia muy sencillo definir la interfaz grafica ya que tanto la figura rectangular de la pantalla como las resoluciones eran muy similares, pero cuando se introdujo al mundo los celulares toda la web tuvo un gran problema de diseño ya que se enfrenta con que los tamaños de las pantallas eran diferentes y podian variar drasticamente. _Responsive Design_ es el nombre que se le dio al concepto de adaptar una interfaz de usuario a diferentes resoluciones y formas vistos en diferentes dispositivos.
+Existe un concepto llamado __mobile first__, el cual nos dice que debemos definir el diseñ del celular antes que el de un computador, de manera que el diseño del movil se adapte al del computador y no al reves.
