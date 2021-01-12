@@ -1,0 +1,43 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.caja{
+    
+    height: 200px;
+    width: 200px;
+}
+.caja1{
+    background-color: rgb(251, 255, 0);
+}
+.caja2{
+    background-color: rgb(4, 0, 255);
+}
+.caja3{
+    background-color: rgb(206, 15, 15);
+}
+
+.caja4{
+    background-color: rgb(15, 184, 206);
+}
+
+.caja5{
+    background-color: rgb(206, 133, 15);
+}
+
+.caja6{
+    background-color: rgb(172, 212, 126);
+}
+
+.container1{
+    justify-content: space-between;
+}
+.container2{
+    justify-content: space-around;
+}
+.container3{
+    justify-content: space-evenly;
+}
+.container4{
+    justify-content: center;
+}

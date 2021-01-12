@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+}
+.caja{
+    margin:0 10px;
+    height: 200px;
+    width: 200px;
+}
+.caja1{
+    background-color: rgb(251, 255, 0);
+}
+.caja2{
+    background-color: rgb(4, 0, 255);
+}
+.caja3{
+    background-color: rgb(206, 15, 15);
+}
+
+
+.container1{flex-direction: column;}
+.container2{flex-direction: column-reverse;}
+.container3{flex-direction: row;}
+.container4{flex-direction: row-reverse;}

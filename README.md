@@ -16,6 +16,7 @@
    13. [Objet Fit](#objet-fit)
    14. [Cursor](#cursor)
    15. [Responsive Design](#responsive)
+   16. [Flex Box](#flexbox)
 
 ### <a name="selectores">Tipos de selectores </a>
 Los selectores (como su nombre lo dice), nos ayudan a identificar y seleccionar los elementos dentro del DOM, una vez seleccionado e identificado el elemento que deseamos procedemos a darle estilo aplicando diversas propiedas.
@@ -193,8 +194,8 @@ Esta propiedad nos indica como un imagen o video sera desplejado o ajustado en u
 Valor|Significado
 -|-
 _fill_| Estira la imagen hasta lograr ocupar totalmente el elemento, comunmente hace que la imagen pierda sus proporciones logicas (_default value_).
-_cover_ | Se escala la imagen para llenar por completo el contenedor, sin embargo no pierde las proporciones logicas de la imagen, lo cual puede dar como resultado que la imagen sea cortada.
-_contain_ | Escala la imagen al maximo tamaño posible del contenedor para poder encajar sin tener que cortar la imagen.
+_cover_ | Se escala la imagen para llenar el contenedor, sin embargo no pierde las proporciones logicas de la imagen, lo cual puede dar como resultado que la imagen sea cortada.
+_contain_ | Escala la imagen al maximo tamaño posible para poder encajar sin tener que cortar la imagen.
 _none_ | Mantinene las medidas iguales de la imagen sin importarle el tamaño de su contenedor. La imagen puede llegar a ser cortada si el tamaño de su contenedor es menor al de la imagen.
 _scale-down_| Es una combinación entre el valor _contain_ y _none_. Da como resultado que no se adapta al tamaño de su contenedor a menos que el tamaño del contenedor sea menor al de la misma imagen.
   
@@ -206,3 +207,35 @@ Esta propiedad indica que forma y caracteristicas tendra nuestro puntero cuando 
 
 Actualmente todas la web se trabajaba sobre computadores de escritorio, lo cual hacia muy sencillo definir la interfaz grafica ya que tanto la figura rectangular de la pantalla como las resoluciones eran muy similares, pero cuando se introdujo al mundo los celulares toda la web tuvo un gran problema de diseño ya que se enfrenta con que los tamaños de las pantallas eran diferentes y podian variar drasticamente. _Responsive Design_ es el nombre que se le dio al concepto de adaptar una interfaz de usuario a diferentes resoluciones y formas vistos en diferentes dispositivos.
 Existe un concepto llamado __mobile first__, el cual nos dice que debemos definir el diseñ del celular antes que el de un computador, de manera que el diseño del movil se adapte al del computador y no al reves.
+
+### <a name="flexbox">Flex Box</a>
+
+Antes las paginas web se estructuraban con tablas, lo cual ocasionaba codigo HTML muy extenso y enredado, que si se le daba un mal manejo podia ocasionar desastres en la parte visual, dañando por completo nuestros "estilos". Con la llegada de CSS se soluciono este problema, separando el estilo de la estructura de la pagina. 
+
+Como conté en puntos anteriores la llegada de los dispositivos moviles y las diferentes resoluciones fue otro de los grandes retos que enfrentarón las paginas web. Para solucionar este reto que es el responsive design, podemos usar la propiedad ´´´display: flex;´´´, lo cual es usado para definir un flex container.  Lo cual habilita algunas propiedades propias del __display flex__.  Es importante que tengamos conocimiento de que cuando los hijos directos que tenga el __flex container__ pasan a ser flex items, que tienen un importante rol en este display ya que son los directamente afectados.
+
+Veamos algunas de las propiedades y valores que pueden tomar los flex container y sus hijos.
+
+__order__: Normalmente tenemos los flex items ubicados de una manera acorde a como lo hemos definido en el HTML, sin embargo, este orden puede ser cambiado según nuestra necesidad aplicando la propiedad _order_ a los flex items. El flex item con menor valor en su propiedad _order_ sera el primero en mostrarse.(recibe numeros).
+
+__flex-direction__: Esta propieda se aplica al flex container y puede recibir 4 valores, que son: _row_, _row-reverse_, _column_ y _column-reverse_. Por defecto su valor es _row_, el cual le indica al contenedor que posicione sus items en una fila. El valor_row-reverse_ ubica los items en fila, pero su orden va a ser inverso. Ahora, faltan por describir dos valores que son _column_ y _column-reverse_, según la explicación dada con _row_ se puede decir que es igual a diferencia que los flex items se ubicaran en columnas.
+
+__flex-flow__: Es un shorthand el cual nos abrevia tanto el _flex-wrap_ como el _flex-direction_. Recibe como primer argumento el flex direction(column,row, column-reverse, row-reverse) y como segundo argumento el flex wrap(wrap, wrap-reverse).
+
+__justify-content__: Esta propiedad nos ayuda a indicar como van a estar distribuidos nuestros flex items en nuestro flex container. Es analogo al _text-align_ en textos. Puede tomar cuatro valores diferentes que son: _space-evenly_ ,_space-between_ ,_space-around_ ,_center_.
+
+__align-items__ & __align-content__: Estas propiedades se usan para alinear los flex items en el eje __Y__, sin embargo, _align-items_ se usa cuando se espera una sola linea de cajas, mientas que _align-content_ la podemos usar aún con mayor cantidad de lineas de cajas. Estas propiedades pueden tomar 5 valores, _flex-start_ ,_flex-end_ , _center_ , _baseline_ , _strech_ (_default_).
+
+
+__align-self__: Se usa para ubicar un flex item en especifico. Esta propiedad es usada en unicamente en el hijo y puede tomar los 5 valores que vimos las propiedades anteriores: _flex-start_ ,_flex-end_ , _center_ , _baseline_ , _strech_ (_default_).
+
+## Propiedades de Flex-items
+
+__flex-grow__: Esta función indica que tanto se expandiran nuestros flex-items respecto al espacio sobrante.
+
+__flex-wrap__: Por defecto flex container van a ubicar todo su contenido en una sola linea, de manera que daran nuevas dimensiones a los flex items. Si queremos que las dimensiones de los flex items se conserven y a medida que la resolución del dispositivo disminuya se vayan añadiendo mas lineas podemos usar esta linea en nuestro css: ´´´flex-wrap: wrap;´´´, otro posible valor para que se añadan mas lineas pero hacia la parte superior del elemento es: ´´´´flex-wrap: wrap-reverse;´´´. El valor por defecto de esta propiedad es _wrap_.
+
+__flex-basis__: Es una propiedad que nos indica las dimensiones iniciales de un _flex-item_, es similar a la propiedad _width_, sin embargo el _flex-basis_ tiene mayor relevancia al momento de difinir las dimensiones.
+
+__flex-shrink__: Indica el espacio que va a ceder un _flex-item_ respecto a sus hermanos cuando requieren encogerse.
+

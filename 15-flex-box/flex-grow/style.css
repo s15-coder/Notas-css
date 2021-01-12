@@ -1,0 +1,25 @@
+body{
+    background-color: aquamarine;
+}
+.parent{
+   flex-wrap: wrap; 
+    display: flex;
+    
+}
+.container1{
+    background-color: yellow;
+flex-grow: 2;
+}
+.container2{
+    background-color: blue;
+flex-grow: 1;
+}
+.container3{
+    background-color: red;
+    flex-grow: 4;
+
+}
+.container{
+    width: 150px;
+    height: 150px;
+}
