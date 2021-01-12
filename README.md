@@ -233,7 +233,7 @@ __align-self__: Se usa para ubicar un flex item en especifico. Esta propiedad es
 
 __flex-grow__: Esta función indica que tanto se expandiran nuestros flex-items respecto al espacio sobrante.
 
-__flex-wrap__: Por defecto flex container van a ubicar todo su contenido en una sola linea, de manera que daran nuevas dimensiones a los flex items. Si queremos que las dimensiones de los flex items se conserven y a medida que la resolución del dispositivo disminuya se vayan añadiendo mas lineas podemos usar esta linea en nuestro css: ´´´flex-wrap: wrap;´´´, otro posible valor para que se añadan mas lineas pero hacia la parte superior del elemento es: ´´´´flex-wrap: wrap-reverse;´´´. El valor por defecto de esta propiedad es _wrap_.
+__flex-wrap__: Por defecto flex container van a ubicar todo su contenido en una sola linea, de manera que daran nuevas dimensiones a los flex items. Si queremos que las dimensiones de los flex items se conserven y a medida que la resolución del dispositivo disminuya se vayan añadiendo mas lineas podemos usar esta linea en nuestro css: ``` flex-wrap: wrap;```, otro posible valor para que se añadan mas lineas pero hacia la parte superior del elemento es: ```flex-wrap: wrap-reverse;```. El valor por defecto de esta propiedad es _wrap_.
 
 __flex-basis__: Es una propiedad que nos indica las dimensiones iniciales de un _flex-item_, es similar a la propiedad _width_, sin embargo el _flex-basis_ tiene mayor relevancia al momento de difinir las dimensiones.
 
