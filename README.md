@@ -17,6 +17,7 @@
    14. [Cursor](#cursor)
    15. [Responsive Design](#responsive)
    16. [Flex Box](#flexbox)
+   17. [Grid](#grid)
 
 ### <a name="selectores">Tipos de selectores </a>
 Los selectores (como su nombre lo dice), nos ayudan a identificar y seleccionar los elementos dentro del DOM, una vez seleccionado e identificado el elemento que deseamos procedemos a darle estilo aplicando diversas propiedas.
@@ -229,7 +230,7 @@ __align-items__ & __align-content__: Estas propiedades se usan para alinear los 
 
 __align-self__: Se usa para ubicar un flex item en especifico. Esta propiedad es usada en unicamente en el hijo y puede tomar los 5 valores que vimos las propiedades anteriores: _flex-start_ ,_flex-end_ , _center_ , _baseline_ , _strech_ (_default_).
 
-## Propiedades de Flex-items
+#### Propiedades de Flex-items
 
 __flex-grow__: Esta función indica que tanto se expandiran nuestros flex-items respecto al espacio sobrante.
 
@@ -239,3 +240,45 @@ __flex-basis__: Es una propiedad que nos indica las dimensiones iniciales de un 
 
 __flex-shrink__: Indica el espacio que va a ceder un _flex-item_ respecto a sus hermanos cuando requieren encogerse.
 
+
+### <a name="grid">Grid</a>
+
+La propiedad _grid_ esta pensada para trabajar de manera bidimensional, tanto con columnas como con filas. Es muy usada para realizar tablas. 
+
+#### __Conceptos preliminares__
+
+  * Al igual que con la propiedad _flex_ existia un container llamado _flex container_, con _grid_ ocurred exactamente lo mismo. Se debe definir un contenedor con la propiedad _grid_ lo cual nos dara origen a tener un _grid container_. 
+  * Los hijos de directos de un _grid container_ reciben el nombre de _grid items_.
+  * Existen los grid line que son las separaciones que existen entre los diferentes _flex items_. Hay dos tipos de lineas: _column grid lines_ y _row grid lines_.
+  * Los _grid cell_ son los cuadros definidos entre columas y filas, ejemplo: lo esperado en un _grid container_ que tenga 2 columnas y 3 rows es que tenga 6 _grid cells_.
+  * _grid track_ es el nombre que reciben tanto las columnas como las filas.
+  * Un _grid area_ es un espacio que definimos en nuestra cuadrila, solo puede tener forma cuadrada o rectangulo.
+
+#### __Iniciando con Grid__
+
+Para empezar debemos definir nuestro _grid container_, lo cual lo logramos dandole la siguiente propiedad a un contenedor ``` display: grid;```. Inicialmente, despúes de definir nuestro grid container puede que no notemos ninguna diferencia ya que por defecto solo tendremos una columna, por lo que es apropiado definir las diferentes columnas y filas con las propiedades ``` grid-template-columns: 5px 6px 10px 5fr; ``` y ```grid-template-rows: 5px 67px 6fr;```. La cantidad de argumentos mandamos corresponden a las medidas que queremos otrogar a nuestros grid tracks. 
+__NOTA__: Cuando mandamos nuestras medidas de nuestras columnas y filas debemos tener en cuenta que tenemos una nueva unidad de medida que podemos usar como _fr_, la cual es similar o analoga al _flex-grow_ en los flex items.
+
+
+Unas interesantes propiedades que podemos usar cuando empezamos a definir nuestras columnas y filas son: ```grid-row-gap: 20px; ``` , ```grid-column-grap: 20px;``` y su respectivo shorthand que es: ```grid-gap: <<colum-grap>> <<row-grap>>```. Estas propiedas indican la distancia que habra entre filas y columnas, muy parecido al margin a diferencia que los _grid items_ no se separaran de su _grid container_.
+
+Cuando queremos que uno de nuestros _grid items_ ocupe mayor espacio podemos usar las propiedades: ```grid-column: <<initial column line>> / <<end column line>>```, ```grid-row: <<initial row line>> / <<end column line>>```. Les pasamos como argumentos la linea de comienzo y la linea final de su respectivo eje. Al podramos notar que nuestro _grid item_ estara ocupando una _grid area_ diferente a la inicial.
+
+### __Grid implicito y explicito__
+
+Inicialmente definimos las dimensiones de nuestra cuadricula con ``` grid-template columns``` y ```grid-template-rows```. Sin embargo, es totalmente normal que nuestra cuadricula deba ser dinamica, por lo cual no sabremos exactamente cuantas columnas y filas tendra. Aquellas columnas y filas que predefinimos hacen parte de nuestro grid explicito, aquellas que no, hacen parte de nuestro grid implicito. 
+
+Por defecto, las nuevas celdas de la cuadrila se ubicaran como nuevas filas sin ningun tamaño especificado. Para cambiar la forma en que se generan las nuevas celdas tenemos la propiedad: ```grid-auto-flow```, la cual puede tomar uno de los siguientes valores: 
+  * _column_: Los nuevos _grid items_ no calculados saldran en forma de otra columna.
+  * _row_: Los nuevos _grid items_ no calculados saldran en forma de otra fila (__default__).
+  * _dense_: Rellena automaticamente los huecos que pueden generar propiedades como ```grid-column``` o ```grid-row```.
+
+Para definir las dimensiones de los nuevos _grid items_ implicitos debemos usar una de las siguientes propiedades:
+  * _grid-auto-columns_: Se usa para definir las dimensiones de las columnas implicitas.
+  *  _grid-auto-rows_: Se usa para definir las dimensiones de las filas implicitas.
+
+#### __Grid dinamico__
+
+Hay funciones que aunque no sean necesariamente propias de grid, si son bastante utiles para hacerlas un poco mas dinamicas. Por ejemplo, para dar medidas basadas en un minimo y un maximo podemos usar la funcione ```minmax(<<medida minima>> , <<medida maxima>>)```. Otras propiedades complementarias de esta funcion podrian ser ```max-content``` y ```min-content``` que nos dicen que el ancho minimo y el maximos deben ser relativos a nuestro contenido.
+
+Hay otras dos propiedades que se usan comunmente en el repeat y son _autofit_ y _autofill_ la cuales o escalan las dimensiones de nuestros _grid-items_ o aumentan columnas o filas dinamicamente.

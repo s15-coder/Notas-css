@@ -1,0 +1,23 @@
+.grid-container {
+    color: #fff;
+border: 5px solid rgb(3, 3, 255);
+    margin: 10px;
+    background-color: rgb(9, 243, 243);
+    display: grid;
+    grid-template-columns: repeat(3, 100px)1fr;
+    grid-template-rows: repeat(2, 100px);
+    column-gap: 8px;
+    row-gap: 2px;
+    grid-auto-columns: 100px 2fr;
+    grid-auto-rows: 100px;
+    grid-auto-flow: dense;
+}
+
+.grid-item {
+    border: 3px solid black;
+    background-color: red;
+}
+.grid-item:nth-child(5){
+    grid-column: 2 / span 2;
+    background-color: green;
+}

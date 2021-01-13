@@ -15,7 +15,7 @@ body{
 }
 .container3{
     background-color: red;
-    flex-shrink: 0;
+    flex-shrink: 1;
 }
 .container{
     width: 300px;

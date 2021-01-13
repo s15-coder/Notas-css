@@ -1,0 +1,18 @@
+body{
+    background-color: rgba(23, 19, 255, 0.938);
+}
+.grid-container{
+    display
+    : grid;
+    grid-template-columns: repeat(3,minmax(min-content, 200px));
+grid-template-rows: repeat(3,minmax(min-content, max-content));
+column-gap: 2px;
+row-gap: 5px;
+}
+.grid-item{
+    background-color: red;
+    border: 5px solid #000000;
+}
+.grid-item:nth-child(5){
+    background-color: greenyellow;
+}
